@@ -1,0 +1,79 @@
+body {font-family: 'Barlow', sans-serif;}
+
+
+/*top-bar*/
+.top-bar {width:100%; height: 40px; position: relative; display: table; padding: 0 30px; border-bottom: 1px solid #ddd; background-color: #aaa; }
+.top-bar .top-column {width: 50%; display: table-cell; vertical-align: middle;}
+.top-bar .top-column a {margin:5px 0; color:#fff; margin-right: 10px; text-decoration: none; font-size:12px; letter-spacing: 0.5px;}
+.top-bar .top-column a i {margin-right: 5px;}
+.top-bar .top-column a:hover {color:#9d297b;}
+.top-bar .top-column a:last-child {margin-right: 0;}
+.top-bar .top-column:last-child {text-align: right;}
+.top-bar .currency .dropdown-menu {left: auto; z-index: 9999; right:0;}
+.top-bar .currency .dropdown-menu a {color:#aaa;}
+.top-bar .currency .dropdown-menu a:before {margin-right:5px;}
+.top-bar .currency .dropdown-menu li a{color:#189879;}
+.top-bar .currency .dropdown-menu li a:hover {background-color:#e394cc; background-image: none;}
+.top-bar .currency .dropdown-menu li a i {margin-right: 5px;}
+.top-bar .currency .dropdown-menu .active a {background-color:#9d297b; background-image: none;}
+.top-bar .currency .dropdown:hover .dropdown-menu {display: block;}
+.top-bar .currency .dropdown-menu .active a, .top-bar .currency .dropdown-menu .active i {color:#fff;}
+
+/*header*/
+header .navbar {padding: 10px; position: relative; top:0 ; margin-bottom: 0;}
+header .navbar-brand {margin-left: 0!important; padding: 0;}
+header .navbar-brand img {width: 50px; height: 100%;}
+header .navbar-default {background-color: #fff;}
+header .navbar-default .navbar-collapse {float: right;}
+
+header .navbar-default .navbar-collapse form {position: relative; width: 400px; height: 100%; padding:15px;}
+header .navbar-default .navbar-collapse form input {position:absolute; width: 350px; height: 80%; box-sizing: border-box; outline:none; font-size: 18px; color:#189879; top:5px; transition:all 0.8s ease; padding: 0 10px;}
+header .navbar-default .navbar-collapse form .search { position: absolute; width: 50px; height: 100%; border-radius: 50%; background-color: red;  top:2px; right:12px; cursor: pointer; line-height: 30px; text-align: center;}
+header .navbar-default .navbar-collapse form .search i {}
+/*header .navbar-default .navbar-collapse form {display: block; position: absolute; width:395px; height: 100%; top:0px; transition: .3s; background-color: #fff; z-index: 10;   }	
+header .navbar-default .navbar-collapse form input {display: block; position: absolute; width:0; height:85%; padding-right: 120px; padding-left: 30px; border-width:0px 0px 2px 0px;  background-color: #fff; color: #606975; font-size: 16px; border-color:#189879; box-sizing: border-box; outline:none; transition: width 0.8s ease;}
+header .navbar-default .navbar-collapse form.visible {visibility:hidden; opacity: 0; }
+header .navbar-default .navbar-collapse form input::placeholder {color:#189879;}
+header .navbar-default .navbar-collapse .searchForm  i {font-size:20px; color:#ddd; position: absolute; cursor: pointer; top:26px; right:20px;}
+*/
+header .navbar-default .navbar-nav > li {margin-right: 10px;}
+header .navbar-default .navbar-nav > li:last-child {margin: 0;}
+header .navbar-default .navbar-nav > li > a {background-color:transparent;font-weight:500;}
+header .navbar-default .navbar-nav > li.active > a,
+header .navbar-default .navbar-nav > li.active > a:hover,
+header .navbar-default .navbar-nav > li.active > a:focus,
+header .navbar-default .navbar-nav > li > a:focus, header .navbar-default .navbar-nav > li > a:hover {border-bottom: 2px solid #189870; background-color: transparent;}
+header .navbar-nav > .open > a, header .navbar-nav > .open > a:hover, header .navbar-nav > .open > a:focus {background-color:transparent!important;}
+header .navbar-default .navbar-nav li.profile:hover .dropdown-menu {display: block;margin-top:0;}
+header .navbar-default .navbar-nav li.profile:hover {border:transparent;}
+header .navbar-default .navbar-nav li.profile .dropdown-menu li a {padding-top:10px; padding-bottom: 10px;}
+header .navbar-default .navbar-nav li .person:hover, header .navbar-default .navbar-nav li .bag:hover  {border-color:#189870;}
+header .navbar-default .navbar-nav li .person, header .navbar-default .navbar-nav li .bag  {text-align: center; border-radius: 50%; border: 1px solid #ddd; line-height: 0;  height: 50px; width: 50px; position: relative;}
+header .navbar-default .navbar-nav li .person i,  header .navbar-default .navbar-nav li .bag i {top:16px; left:16px; position: absolute; font-size:18px; text-align: center;}
+header .navbar-default .navbar-nav li .person i.fa-user {left:18px;}
+header .navbar-default .navbar-nav li.profile .dropdown-menu {left: -50px;}
+
+/*main*/
+main .carousel-indicators {margin-bottom: 0;}
+main .carousel-control.left, main .carousel-control.right {background-image: none;}
+main .carousel.slide {background-image:url('../images/main-bg.jpg');}
+main .carousel-inner,main .right-col  {min-height:540px;}
+main .carousel-inner .rows {width: 100%;padding:80px 30px;}
+main .d-flex {display: flex; justify-content: center; align-items: center; }
+main .carousel .carousel-inner .item p {margin-bottom: 0;}
+
+/*main .right-col {background-color: #f8f8f8;}*/
+main .right-col .right-box {display: flex; padding: 20px; background-color: #f8f8f8; flex-direction: column; align-items: center;}
+main .right-col .right-box:first-child {margin-bottom: 15px;}
+main .right-col .right-box i {font-size: 30px; margin: 15px 0;}
+main .right-col .right-box h6 {font-weight: 500; letter-spacing: 0.7px; color:#7c7c7c; margin: 15px 0;}
+main .right-col .right-box p {font-size: 12px; letter-spacing:0.5px; color:#7c7c7c; margin: 15px 0; }
+
+
+/*Media Query*/
+@media (min-width: 320px) and (max-width: 480px) {
+		header .navbar-default .navbar-collapse {float:none;}
+		header .navbar-brand img {width: 45px;}	
+		header .navbar-default .navbar-collapse form input {height: 70px;}
+}
+ 
