@@ -64,27 +64,28 @@
               </li>
               <li class="profile dropdown">
                 <!-- <a class="fa fa-user" aria-hidden="true" href=""></a> --> 
-                <a href="#" class="dropdown-toggle person" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
+                <a href="#" class="dropdown-toggle person" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i><span class="hidden-md hidden-lg">Profile</span></a>
                 <ul class="dropdown-menu">
-                  <li><a>example@email.com</a></li>
+                  <li><a type="button" class="btn login-btn" data-toggle="modal" data-target="#myModal">
+                    Sign In
+                    </a><small><a data-target="#myModal2" data-toggle="modal" href="#">Dont have id? New Customer</a></small>
+                  </li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#">My Orders</a></li>
                   <li><a href="#">Wishlist</a></li>
                   <li><a href="#">Gift Card</a></li>
                   <li><a href="#">Shopping Group</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Logout</a></li>
                 </ul>
               </li>
-              <li class="dropdown bag">
-                <a  href="cart.html" class="dropdown-toggle bag" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-bag"></i></a>
+              <li class="cart dropdown">
+                <a class="dropdown-toggle bag" href="cart.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-bag"></i><span class="hidden-md hidden-lg">Cart</span></a>
                 <ul class="dropdown-menu">
                   <li>
                     <a>
                       <img class="img-responsive cart-img" src="images/02.png">
                       <div class="cart-text">
                         <h5>Puma Backpacks Collection</h5>
-                        <small>$ 40</small>
+                        <small>$ 40</small><i class="fa fa-times"></i>
                       </div>
                     </a>
                   </li>
@@ -204,7 +205,7 @@
       <div class="">
         <div class="col-xs-12 prd-slider">
           <h2 class="text-center"><span class="color-red">You May also </span>Like</h2>
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel ol3 owl-theme">
             <div class="item">
               <div class="prd-img-bx">
                 <img src="images/p01.jpg" class="img-responsive">
