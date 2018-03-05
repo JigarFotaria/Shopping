@@ -10,6 +10,11 @@
         return false;
     });
 
+    $('.remove').on('click',function(){
+        $(this).parents('.col-sm-6.col-xs-6.col-md-4').fadeOut();
+        return false;
+    });
+
     $('.bag').on('click', function(){
         window.location = "cart.html"
     });

@@ -295,9 +295,11 @@ main .l-pannel .fliter-cb label input, .fliter-size label input {height: 15px; w
 main .r-pannel .column {display: table; width: 100%; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
 main .r-pannel .list-column {border-bottom: 1px solid #ddd; padding-bottom: 20px;}
 main .r-pannel .top-controls {display: table-cell;vertical-align: middle; text-align: right;}
+main .r-pannel .top-controls .control-sort { display: inline-block; margin-right: 10px;}
+main .r-pannel .top-controls .control-sort:last-child {margin-right: 0;}
 main .r-pannel .top-controls label {display: inline-block; vertical-align: middle; margin-right: 10px;}
 main .r-pannel .top-controls select.form-control:focus {box-shadow: unset;  border-color: #ddd;}
-main .r-pannel .top-controls select.form-control {max-width: 160px; vertical-align:middle; display: inline-block; margin-right: 10px; border-color: #ddd;}
+main .r-pannel .top-controls select.form-control {max-width: 160px; vertical-align:middle; display: inline-block; margin-right: 10px; border-color: #ddd; width: auto;}
 main .r-pannel .top-controls select.form-control:last-child {margin-right: 0;}
 main .r-pannel .top-controls select.form-control option {padding:8px 0;}
 main .r-pannel .pagination > li > a, .pagination > li > span {color:#189870;}
@@ -327,7 +329,8 @@ main .r-pannel .navigation ul.pager {display:inline-block; float: right;}
 .right-box-pdetail .prd-code, .right-box-pdetail .prd-cat {color:#aaa; padding-bottom: 20px;}
 .right-box-pdetail .prd-code span, .right-box-pdetail .prd-cat span  {font-weight: 600; font-size: 18px; color:#666;}
 .right-box-pdetail .prd-cat {border-bottom: 1px solid #ddd;}
-a.btn-add {text-decoration: none;}
+.btn-group-bx  {padding: 15px; text-align: right;}
+a.btn-add {text-decoration: none; }
 .btn-add {padding:10px 15px; background-color: #189870;  color:#fff; border-radius: 5px; display: inline-block;}
 .btn-add:hover {border:1px solid #189870; color:#189870; background-color: transparent;}
 .fav-color {background-color: #9d297b}
@@ -347,26 +350,35 @@ a.btn-add {text-decoration: none;}
 
 
 /*Media Query*/
-@media (min-width: 320px) and (max-width: 480px) {
-		.cart-page .table-responsive {margin-top: 30px;}
+@media (min-width: 320px) and (max-width: 479px) {
+		.cart-page .table-responsive {margin-top: 10px;}
 		
 		.carousel.slide .item h2 {}
 		.carousel.slide .item img {max-width: 150px; margin:0px auto;}
 		.cart-page .table .prd-thumb img {width: 60px;}
-
+		.discount-tag {left:17px;}
+		.breadcrumb {margin-bottom: 15px;}
 		main .carousel.slide .carousel-inner .item {top:12%;}
 		main .carousel-inner {min-height: 410px;}
 		main .carousel-inner .rows {padding-left: 15px; padding-right: 15px;}
 		main .carousel-control .glyphicon-chevron-left:before {left: -7px;}
 		main .carousel-control .glyphicon-chevron-right:before {right: -6px;}
 		main .owl-carousel .owl-item {padding:0 20px;}
-
-		.owl-carousel .owl-nav .owl-next {right:-10px;}
-		.owl-carousel .owl-nav .owl-prev {left: -10px;}
+		main .r-pannel .top-controls select.form-control {padding:6px 4px;}
+		main .r-pannel .top-controls .control-sort {width: 100%;}
+		.owl-carousel .owl-nav .owl-next {right:-20px;}
+		.owl-carousel .owl-nav .owl-prev {left: -20px;}
+		.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {top:150px;}
 		main .r-pannel .navigation {text-align: center; }
 		main .r-pannel .navigation .pager {margin: 10px; float:none!important;}
-		
-		main .right-col {min-height:auto;}
+		main .r-pannel .top-controls {text-align: left;}
+		main .r-pannel .top-controls select.form-control  {max-width: 165px;}
+		main .r-pannel .top-controls label, main .r-pannel .top-controls select.form-control {margin-bottom: 10px;}
+		main .r-pannel .top-controls select.form-control:last-child	{margin:0 10px 10px 0;}			
+		main .r-pannel .prd-img-bx img {width: 100%;}
+		main .r-pannel .prd-thumb .prd-detail {padding: 0;}
+		main .r-pannel .prd-thumb .prd-detail a h3 {font-size: 10px;}
+		main .right-col {min-height:180px;}
 		main .right-col .right-box {width: 49%; float: left; margin-left: 2%; height: auto;}
 		main .right-col .right-box img {height: 180px;}
 		main .right-col .right-box:first-child {margin-left: 0; margin-top: 10px; height: auto;}
@@ -374,23 +386,22 @@ a.btn-add {text-decoration: none;}
 		footer .newsletter .subs-bx input {width: 75%;}
 		footer .foot-col-div {padding-left:30px; padding-right: 40px;}
 		
-		
 		.cart-page .cart-0out div {text-align: center;}
 		main .owl-carousel .item {padding:0;}
 		.left-box-pdetail ul {margin-top: 20px;}
 		.left-box-pdetail ul li {margin-bottom: 10px}
 		.thumb-img {height: 40px; width: 40px;}
 		.cart-page .cart-ttl .cpn input {text-align: center; max-width: unset;}
-		.cart-page .cart-ttl .cpn a {float: right;  margin:20px; }
+		.cart-page .cart-ttl .cpn a {float: right;  margin:20px 0; }
 		.right-box-pdetail {margin-top: 20px;}
 		a.btn-add {font-size: 13px;}
 		.share-social {margin-top:10px; }
 }
  
-		@media (min-width: 481px) and (max-width: 767px){
+	@media (min-width: 480px) and (max-width: 767px){
 		 header .navbar-default .navbar-collapse {float: none;}
 		 main .carousel.slide .carousel-inner .item {top:11%;}
-		 
+		 main .right-col {min-height: 260px}
 		 main .right-col {margin-top:20px;}
 		 main .right-col .right-box {width:50%; float: left;}
 		 main .right-col .right-box:last-child {margin-top: 0;}
@@ -402,10 +413,9 @@ a.btn-add {text-decoration: none;}
 
 
 	@media (min-width: 320px) and (max-width: 767px){
-			main .right-col {min-height: 260px}
-			main .owl-carousel .item {margin:15px;}
-			.owl-carousel .owl-nav .owl-prev {left:-9px;}
-			.owl-carousel .owl-nav .owl-next {right:-9px;}
+			
+			
+			
 		main .prd-slider {padding-right: 20px; padding-left: 20px;}
 		.navbar-default .navbar-toggle .icon-bar {background-color: #189870;}
 		.navbar-collapse.in{margin-top:15px;}
