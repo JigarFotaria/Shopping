@@ -1,15 +1,21 @@
   $(document).ready(function() {
+
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    });
+
+
     $('.fa-heart-o').on('click', function(){
         $(this).toggleClass('color-red');
         return false;
     });
 
-    // $('.bag').on('click', function(){
-    //     window.location = "cart.html"
-    // });
-    // $('.removeItem').on('click', function(){
-    //     $(this).parents('.itemRow').remove();
-    // });
+    $('.bag').on('click', function(){
+        window.location = "cart.html"
+    });
+    $('.removeItem').on('click', function(){
+        $(this).parents('.itemRow').remove();
+    });
     $('.ol1,.ol3').owlCarousel({
         loop:true,
         margin:10,
@@ -35,6 +41,7 @@
             }
         }
     });
+
     $('.ol2').owlCarousel({
         loop:true,
         margin:10,
@@ -59,6 +66,22 @@
             }
         }
     });
+
+
+    $(function() {
+    $("#slider-range").slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+
 
 });
          
