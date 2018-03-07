@@ -15,6 +15,14 @@
         return false;
     });
 
+    
+    $(window).load(function(){
+        setTimeout(function(){
+       $('#sub-email').modal('show');
+            }, 3000);
+        });
+
+
     $('.bag').on('click', function(){
         window.location = "cart.html"
     });
