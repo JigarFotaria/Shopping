@@ -104,10 +104,19 @@
       <header class="bg-banner">
         <h2>Mens New Arrival</h2>
       </header>
-      <section class="container mt-40">
-        <div class="col-md-3 hidden-xs l-pannel">
-          
+      <section class="container mt-40" id="container">
+         <a id="mySidenav" class="filter">
+            
+           <!--  <span class="close"></span> -->
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              
+             </a>
+           
+        <div class="col-md-3 l-pannel" id="l-pannel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               
           <ul class="list-group">
+              
           	<h2 class="text-uppercase">Shop Category</h2>
   			<li class="list-group-item">
   				<a  class="collapsed cat-list" data-toggle="collapse" href="#1" aria-expanded="false" aria-controls="1">
@@ -211,7 +220,7 @@
           </div>
           <div class="list-column">
             <div class="row">
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -228,7 +237,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -245,7 +254,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -262,7 +271,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -279,7 +288,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -296,7 +305,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -313,7 +322,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -330,7 +339,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -347,7 +356,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -364,7 +373,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -381,7 +390,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -398,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-md-4">
                 <div class="prd-thumb">
                   <div class="prd-img-bx">
                     <img src="images/p06.jpg" alt="..." class="img-responsive">
@@ -573,6 +582,26 @@
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/commanjs.js"></script>
+    <script type="text/javascript">
+       function openNav() {
+          document.getElementById("l-pannel").setAttribute(
+           "style", "width: 100%; padding:20px; transition: ease .4s;");
+   
+}
+
+function closeNav() {
+    document.getElementById("l-pannel").setAttribute(
+           "style", "width:0px; padding:0px;");
+
+}
+
+
+    </script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!-- document.getElementById("container").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("container").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white"; -->

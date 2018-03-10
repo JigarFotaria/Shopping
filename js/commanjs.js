@@ -23,6 +23,20 @@
         });
 
 
+    // $(document).ready(function(){
+
+    //     $('.filter').click(function(){
+    //          $('.l-pannel').toggleClass('active');
+    //          $('.filter').toggleClass('toggle');
+    //          $('.close').removeClass('active);
+    //          return false;
+    //       });
+
+
+    // });
+   
+
+    
     $('.bag').on('click', function(){
         window.location = "cart.html"
     });
@@ -95,6 +109,7 @@
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   });
 
+    
 
 });
          
