@@ -41,7 +41,7 @@
 
 
     $('.bag').on('click', function(){
-        window.location = "cart.html"
+        window.location = "cart.php"
     });
     $('.removeItem').on('click', function(){
         $(this).parents('.itemRow').remove();
