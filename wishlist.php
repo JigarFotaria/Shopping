@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>Wishlist</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +14,13 @@
       <!-- <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.theme.default.min.css"> -->
       <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
       <link href="css/style.css" rel="stylesheet">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5992184429758491",
+    enable_page_level_ads: true
+  });
+</script>
    </head>
    <body>
       <section class="top-bar hidden-xs hidden-sm">
