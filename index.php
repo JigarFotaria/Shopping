@@ -108,9 +108,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 prd-slider discount-offer">
                <div class="overlay-disc">
-                  <span>Discount End In <strong>Hurry !!</strong></span>
+                 <!--  <span>Discount End In <strong>Hurry !!</strong></span>
                   <p id="timer">
-                  </p>
+                  </p> -->
                   <a class="btn" href="#">Shop Now</a>
                </div>
             </div>
@@ -250,10 +250,10 @@
          </div>
          <div class="row">
             <div class="offer-section">
-               <p>Buy Any 2!</p>
+              <!--  <p>Buy Any 2!</p>
                <a href="product-list.php"><span>1299</span></a>
                <a href="product-list.php"><span>1399</span></a>
-               <a href="product-list.php"><span>1499</span></a>
+               <a href="product-list.php"><span>1499</span></a> -->
             </div>
          </div>
          <div class="row">
@@ -523,7 +523,7 @@
       <script src="js/commanjs.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script type="text/javascript"></script>
-      <script>
+      <!-- <script>
          // Set the date we're counting down to
          var countDownDate = new Date("mar 15, 2018 15:37:25").getTime();
          
@@ -552,6 +552,6 @@
                  document.getElementById("timer").innerHTML = "EXPIRED";
              }
          }, 1000);
-      </script>
+      </script> -->
    </body>
 </html>

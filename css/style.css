@@ -81,7 +81,7 @@
      margin-bottom: 40px;
 }
  .color-red {
-    color:red!important;
+    color:#ff455d!important;
 }
  .color-green {
     color:#189879;
@@ -374,11 +374,12 @@
 
 /*offer section*/
  main .offer-section {
-    background:url('../images/flower-bg.jpg');
+    background:url('../images/advertise_1.png');
      background-position: center;
      width: 100%;
      display: table;
-     height: 260px;
+     height: 300px;
+     margin-top: 20px;
 }
  main .offer-section p {
     text-align: center;
@@ -684,7 +685,7 @@
      text-transform: uppercase;
      color:#666;
      display: inline-block;
-     border-bottom: 3px solid #189870;
+     /*border-bottom: 3px solid #189870;*/
      margin-top: 20px;
      margin-bottom: 0;
 }
@@ -731,23 +732,26 @@
      left:0;
      content: '';
      display: flex;
-     background: url(../images/discount.png);
+     background: url(../images/advertise_4.jpg);
      background-repeat: no-repeat;
      z-index: 998;
      width: 100%;
      height: 480px;
      align-items: center;
      flex-wrap: wrap;
+     background-size: 100%;
+     background-position: top center;
      place-content:center;
      flex-flow: column nowrap;
 }
  main .prd-slider .overlay-disc:before {
     position: absolute;
      content: '';
-     background-color: rgba(110,110,110,0.4);
+    /* background-color: rgba(110,110,110,0.4);*/
      width: 100%;
      height: 100%;
      left:0;
+     transition: ease 0.2s;
 }
  main .prd-slider .overlay-disc p {
     font-size: 43px;
@@ -775,12 +779,14 @@
     font-size: 16px;
      vertical-align: middle;
      padding: 15px;
-     color:#fff;
-     background-color: #189870;
-     z-index: 99999;
-    display: flex;
-     align-items: center;
-     flex-direction: column;
+    border-radius: 0;
+    z-index: 99999;
+    color: #fff;
+    background-color:#ff455d;
+    position: absolute;
+    font-weight: bold;
+    bottom:75px;
+    
 }
 /*main .prd-slider .overlay-disc p {
     font-size: 43px;
@@ -815,8 +821,8 @@
 */
  main .prd-slider .overlay-disc a:hover {
     background-color: transparent;
-     border:1px solid #189870;
-     color:#189870;
+     border:1px solid #00469e;
+     color:#fff;
 }
  main .prd-thumb .prd-detail a.remove {
     float: right;
@@ -1295,16 +1301,16 @@
     height: 15px;
      width: 15px;
 }
- .ui-state-focus, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+ /*.ui-state-focus, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border-color: #189870;
      background-color: #189870;
-}
+}*/
  .ui-widget-header {
     background-color: #9d297b;
 }
  .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
-    border-color: #189870;
-     background-color: #189870;
+    border-color: #9d297b;
+     background-color: #transperant;
 }
  main .r-pannel .column {
     display: table;

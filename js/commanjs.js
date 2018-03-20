@@ -53,11 +53,11 @@
         navText: ["<i class='fa fa-long-arrow-left' aria-hidden='true'></i>","<i class='fa fa-long-arrow-right' aria-hidden='true'></i>"],
         responsiveClass:true,
         autoplay:true,
-        autoplayTimeout:2500,
+        autoplayTimeout:10000,
         autoplayHoverPause:false,
         responsive:{
             0:{
-                items:1,
+                items:3,
                 nav:false
             },
             600:{
@@ -79,7 +79,7 @@
         navText: ["<i class='fa fa-long-arrow-left' aria-hidden='true'></i>","<i class='fa fa-long-arrow-right' aria-hidden='true'></i>"],
         responsiveClass:true,
         autoplay:true,
-        autoplayTimeout:2500,
+        autoplayTimeout:10000,
         autoplayHoverPause:false,
         responsive:{
             0:{
@@ -104,7 +104,7 @@
         rewind: true,
         responsiveClass:true,
         autoplay:true,
-        autoplayTimeout:4000,
+        autoplayTimeout:10000,
         autoplayHoverPause:false,
         responsive:{
             0:{
@@ -124,19 +124,7 @@
     });
 
 
-    $(function() {
-    $("#slider-range").slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  });
+   
 
    
 });
